@@ -47,6 +47,8 @@
   :tpope/vim-surround {}
   :mattn/emmet-vim {}
   :thekelvinliu/kwbd {:mod :kwbd}
+  :guns/vim-sexp {:mod :sexp}
+  :tpope/vim-sexp-mappings-for-regular-people {}
 
   ; Language plugins
   :leafOfTree/vim-svelte-plugin {}
