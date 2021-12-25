@@ -1,21 +1,26 @@
+import System.Exit
+import System.IO
 import XMonad
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.InsertPosition
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ManageHelpers
 import XMonad.Layout.Gaps
 import XMonad.Layout.Spacing
+import XMonad.Util.EZConfig(additionalKeys)
 import XMonad.Util.Run(spawnPipe)
 import XMonad.Util.SpawnOnce
-import XMonad.Util.EZConfig(additionalKeys)
-import System.IO
-import System.Exit
+
+import qualified XMonad.StackSet as W
 
 myStartupHook = do
-    spawnOnce "picom"
+    spawnOnce "picom";
+
 main = do
     xmproc <- spawnPipe "xmobar"
 
     xmonad $ defaultConfig
-        { manageHook = manageDocks <+> manageHook defaultConfig
+        { manageHook = insertPosition Below Newer <+> manageDocks <+> (isDialog --> doF W.shiftMaster <+> doF W.swapDown) <+> manageHook defaultConfig
         , layoutHook = gaps [(U,35)] $ spacingWithEdge 10 $ avoidStruts  $  layoutHook defaultConfig
         , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
         , logHook = dynamicLogWithPP xmobarPP
@@ -29,6 +34,7 @@ main = do
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock; xset dpms force off")
         , ((mod4Mask, xK_Return), spawn "st")
+        , ((mod4Mask .|. shiftMask, xK_Return), windows W.swapMaster)
         , ((mod4Mask .|. shiftMask, xK_q), kill)
         , ((mod4Mask .|. shiftMask, xK_x), spawn "betterlockscreen -l")
         , ((mod4Mask .|. controlMask .|. shiftMask, xK_BackSpace), io (exitWith ExitSuccess))
