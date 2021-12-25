@@ -1,9 +1,9 @@
-Config { font = "xft:monospace:pixelsize=30"
+Config { font = "xft:monospace:style=Retina,Regular:size=10"
         , borderColor = "#282C34"
         , border = TopB
         , bgColor = "#282C34"
         , fgColor = "grey"
-        , position = Static { xpos = 0, ypos = 0, width = 3000, height = 30 },
+        , position = Static { xpos = 0, ypos = 0, width = 3000, height = 40 },
         , commands = [Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
                         , Run Network "eth1" ["-L","0","-H","32","--normal","green","--high","red"] 10
                         , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
