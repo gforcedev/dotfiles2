@@ -2,16 +2,15 @@ Config { font = "xft:monospace:style=Retina,Regular:size=10"
         , borderColor = "#282C34"
         , border = TopB
         , bgColor = "#282C34"
-        , fgColor = "grey"
+        , fgColor = "#ABB2BF"
         , position = Static { xpos = 0, ypos = 0, width = 3000, height = 40 },
-        , commands = [Run Network "eth0" ["-L","0","-H","32","--normal","green","--high","red"] 10
-                        , Run Network "eth1" ["-L","0","-H","32","--normal","green","--high","red"] 10
-                        , Run Cpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+        , commands = [Run Network "wlan0" ["-L","0","-H","32","--normal","#ABB2BF","--high","#ABB2BF"] 10
+                        , Run Cpu ["-L","3","-H","50","--normal","#ABB2BF","--high","#ABB2BF"] 10
                         , Run Memory ["-t","Mem: <usedratio>%"] 10
                         , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
                         , Run StdinReader
                         ]
         , sepChar = "%"
         , alignSep = "}{"
-        , template = "%StdinReader% | %cpu% | %memory% * %swap% | %eth0% - %eth1% }{<fc=#ee9a00>%date%</fc>"
+        , template = "%StdinReader% | %cpu% | %memory% | %wlan0% }{<fc=#ee9a00>%date%</fc>"
         }
