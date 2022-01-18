@@ -3,3 +3,4 @@
              onedark onedark}})
 
 (onedark.setup)
+(nvim.ex.colorscheme :onedark)
