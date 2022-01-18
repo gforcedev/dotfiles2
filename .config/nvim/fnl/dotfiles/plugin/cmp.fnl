@@ -1,4 +1,4 @@
-(module config.plugin.cmp
+(module dotfiles.plugin.cmp
   {autoload {nvim aniseed.nvim
              cmp cmp}})
 

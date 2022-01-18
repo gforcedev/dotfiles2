@@ -63,4 +63,5 @@
   :hrsh7th/cmp-cmdline {}
   :PaterJason/cmp-conjure {}
   :hrsh7th/nvim-cmp {:mod :cmp}
+  :sidebar-nvim/sidebar.nvim {:mod :sidebar}
   )
