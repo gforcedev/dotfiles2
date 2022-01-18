@@ -28,12 +28,12 @@ main = do
                         , ppTitle = xmobarColor "green" "" . shorten 50
                         }
         , modMask = mod4Mask     -- Rebind Mod to the Windows key
-        , terminal = "st"
+        , terminal = "alacritty"
         , borderWidth = 0
         , startupHook = myStartupHook
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock; xset dpms force off")
-        , ((mod4Mask, xK_Return), spawn "st")
+        , ((mod4Mask, xK_Return), spawn "alacritty")
         , ((mod4Mask .|. shiftMask, xK_Return), windows W.swapMaster)
         , ((mod4Mask .|. shiftMask, xK_q), kill)
         , ((mod4Mask .|. shiftMask, xK_x), spawn "betterlockscreen -l")
