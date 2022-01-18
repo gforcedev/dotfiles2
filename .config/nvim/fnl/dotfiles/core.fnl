@@ -4,7 +4,6 @@
 
 ; Generic config
 (set nvim.o.title true)
-(set nvim.o.termguicolors true)
 (set nvim.o.mouse "a")
 (set nvim.o.updatetime 500)
 (set nvim.o.timeoutlen 500)
