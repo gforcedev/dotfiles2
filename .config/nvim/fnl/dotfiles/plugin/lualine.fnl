@@ -15,8 +15,8 @@
                  :disabled_filetypes []}
        :sections {
                   :lualine_a ["mode"]
-                  :lualine_b ["branch"]
-                  :lualine_c ["filename"]
+                  :lualine_b ["filename"]
+                  :lualine_c ["branch"]
                   :lualine_x ["encoding"]
                   :lualine_y ["fileformat" "filetype"]
                   :lualine_z ["location" "progress"]}

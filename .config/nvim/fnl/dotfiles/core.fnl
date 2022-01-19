@@ -8,6 +8,7 @@
 (set nvim.o.updatetime 500)
 (set nvim.o.timeoutlen 500)
 (set nvim.o.sessionoptions "blank,curdir,folds,help,tabpages,winsize")
+(set nvim.o.scrolloff 4)
 (set nvim.o.inccommand :split) ; For more interactive :s
 (set nvim.o.number true)
 (set nvim.o.tabstop 4)

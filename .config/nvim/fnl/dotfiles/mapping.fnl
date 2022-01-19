@@ -15,7 +15,7 @@
 (noremap :n :<leader>bn ":bnext<cr>")
 (noremap :n :<leader>bp ":bprev<cr>")
 (noremap :n :<leader>tn ":tabnext<cr>")
-(noremap :n :<leader>tp ":tabnext<cr>")
-(noremap :n :<leader>tc ":tabnext<cr>")
+(noremap :n :<leader>tp ":tabprev<cr>")
+(noremap :n :<leader>tc ":tabclose<cr>")
 (noremap :n :<leader>tt ":tab split<cr>")
 
