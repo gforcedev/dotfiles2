@@ -37,10 +37,15 @@
   :navarasu/onedark.nvim {:mod :onedark}
   :hoob3rt/lualine.nvim {:mod :lualine}
 
+  ; Git management
+  :airblade/vim-gitgutter {}
+  :tpope/vim-fugitive {}
+  :tpope/vim-rhubarb {}
+  :shumphrey/fugitive-gitlab.vim {:mod :fugitive-gitlab}
+
   ; Editor behaviour
   :jiangmiao/auto-pairs {:mod :auto-pairs}
   :lewis6991/impatient.nvim {}
-  :tpope/vim-fugitive {}
   :tommcdo/vim-lion {:mod :vim-lion}
   :scrooloose/nerdcommenter {:mod :nerdcommenter}
   :christoomey/vim-tmux-navigator {:mod :vim-tmux-navigator}

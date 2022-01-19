@@ -1,4 +1,4 @@
-(module dotfiles.plugins.nerdcommenter
+(module dotfiles.plugin.nerdcommenter
   {autoload {nvim aniseed.nvim}})
 
 (set nvim.g.NERDSpaceDelims true)
