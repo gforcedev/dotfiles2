@@ -42,3 +42,6 @@
                                 }
                       }})
     ))
+
+(util.nnoremap :gd "'<Cmd> lua vim.lsp.buf.definition()<CR>'")
+
