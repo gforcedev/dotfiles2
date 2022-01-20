@@ -14,3 +14,5 @@
       :FileType
       "clojure,fennel,scheme"
       "lua require('dotfiles.plugin.auto-pairs').init()")))
+
+(set nvim.g.AutoPairsShortcutToggle "")

@@ -60,6 +60,7 @@
 
   ; Own feature things
   :nvim-telescope/telescope.nvim {:mod :telescope :requires [[:nvim-lua/popup.nvim] [:nvim-lua/plenary.nvim]]}
+  :ThePrimeagen/harpoon {:mod :harpoon}
   :nvim-treesitter/nvim-treesitter {:run ":TSUpdate" :mod :treesitter}
   :neovim/nvim-lspconfig {:mod :lspconfig}
   :hrsh7th/cmp-nvim-lsp {}
