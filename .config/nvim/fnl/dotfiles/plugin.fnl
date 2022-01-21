@@ -57,6 +57,8 @@
 
   ; Language plugins
   :leafOfTree/vim-svelte-plugin {}
+  :rodjek/vim-puppet {}
+  :chrisbra/csv.vim {}
 
   ; Own feature things
   :nvim-telescope/telescope.nvim {:mod :telescope :requires [[:nvim-lua/popup.nvim] [:nvim-lua/plenary.nvim]]}
