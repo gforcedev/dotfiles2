@@ -6,6 +6,7 @@
                       "javascript"
                       "typescript"
                       "php"
+                      "perl"
                       "yaml"
                       "clojure"
                       "fennel"]

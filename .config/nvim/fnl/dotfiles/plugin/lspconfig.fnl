@@ -18,7 +18,7 @@
                       :linters {
                                 :eslint {
                                          :sourceName "eslint"
-                                         :command "./node_modules/.bin/eslint"
+                                         :command "eslint"
                                          :rootPatterns [".eslintrc.js" "package.json"]
                                          :debounce 100
                                          :args [
@@ -37,8 +37,8 @@
                                                      :message "${message} [${ruleId}]"
                                                      :security "severity"}
                                          :securities {
-                                                      [2] "error"
-                                                      [1] "warning"}}
+                                                      2 "error"
+                                                      1 "warning"}}
                                 }
                       }})
     ))
