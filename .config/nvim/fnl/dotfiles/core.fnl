@@ -10,6 +10,7 @@
 (set nvim.o.sessionoptions "blank,curdir,folds,help,tabpages,winsize")
 (set nvim.o.scrolloff 4)
 (set nvim.o.inccommand :split) ; For more interactive :s
+(set nvim.o.hlsearch false)
 (set nvim.o.number true)
 (set nvim.o.tabstop 4)
 (set nvim.o.shiftwidth 4)
