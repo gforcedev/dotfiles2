@@ -1,0 +1,27 @@
+{
+  "For Loop": {
+    "prefix": ["for", "for-const"],
+    "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+    "description": "A for loop."
+  }
+}
+
+{
+  "name": "gforcedev-snippets",
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": [
+          "plaintext",
+          "markdown",
+          "tex",
+          "html",
+          "global"
+        ],
+        "path": "./snippets/global.json"
+      }
+  }
+}

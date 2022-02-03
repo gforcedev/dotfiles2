@@ -1,6 +1,7 @@
 (module dotfiles.plugin.cmp
   {autoload {nvim aniseed.nvim
-             cmp cmp}})
+             cmp cmp
+             luasnip luasnip}})
 
 (nvim.ex.set "completeopt=menu,menuone,noselect")
 
@@ -35,13 +36,15 @@
    :conjure "conj"
    :nvim_lsp "lsp"
    :path "path"
-   :nvim_lua "lua"})
+   :nvim_lua "lua"
+   :luasnip "luasnip"})
 
 (def- cmp-srcs
   [{:name :nvim_lsp}
    {:name :conjure}
    {:name :nvim_lua}
    {:name :path}
+   {:name :luasnip}
    {:name :buffer}])
 
 (cmp.setup {:formatting
@@ -57,6 +60,8 @@
                       :<C-e> (cmp.mapping.close)
                       :<CR> (cmp.mapping.confirm {:behavior cmp.ConfirmBehavior.Insert
                                                   :select true})}
+            :snippet {:expand (fn [args]
+                                (luasnip.lsp_expand args.body))}
             :sources cmp-srcs})
 
 (cmp.setup.cmdline "/" {:sources [{:name "buffer"}]})
