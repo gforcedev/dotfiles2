@@ -1,0 +1,6 @@
+fontconfig
+nvim
+picom
+tmux
+xresources
+zsh

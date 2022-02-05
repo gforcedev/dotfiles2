@@ -54,4 +54,4 @@
 (util.lnnoremap :fsr "Telescope lsp_references")
 (util.lnnoremap :fsS "Telescope lsp_document_symbols")
 (util.lnnoremap :fss "Telescope lsp_workspace_symbols")
-(util.lnnoremap "f," "Telescope find_files cwd=~/dotfiles2/.config/nvim")
+(util.lnnoremap "f," "Telescope find_files cwd=~/dotfiles2/nvim/.config/nvim")
