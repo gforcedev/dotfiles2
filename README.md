@@ -2,7 +2,8 @@
 Dotfiles2 because I [previously](https://github.com/gforcedev/dotfiles) managed them with a git bare repo, but I now think stow is nicer
 ## Setup
 - `git clone https://github.com/gforcedev/dotfiles2`
-- `stow dotfiles2`
+- `cd dotfiles2`
+- `cat (all|server).txt | xargs stow`
 
 # Required installation
  - Zsh
@@ -12,3 +13,4 @@ Dotfiles2 because I [previously](https://github.com/gforcedev/dotfiles) managed 
  - [Ripgrep](https://github.com/BurntSushi/ripgrep) as a telescope backend
  - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
  - [Nvm](https://github.com/nvm-sh/nvm)
+ - [i3-layouts](https://github.com/eliep/i3-layouts/tree/main/test) (via pip, into `~/.local/bin` otherwise i3.conf will need updating)
