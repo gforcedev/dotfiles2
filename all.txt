@@ -1,6 +1,8 @@
 fontconfig
+i3
 nvim
 picom
 tmux
+xfce4
 xresources
 zsh
