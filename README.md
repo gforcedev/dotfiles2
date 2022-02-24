@@ -14,3 +14,4 @@ Dotfiles2 because I [previously](https://github.com/gforcedev/dotfiles) managed 
  - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm)
  - [Nvm](https://github.com/nvm-sh/nvm)
  - [i3-layouts](https://github.com/eliep/i3-layouts/tree/main/test) (via pip, into `~/.local/bin` otherwise i3.conf will need updating)
+ - [bamblebee-status](https://github.com/tobi-wan-kenobi/bumblebee-status)
