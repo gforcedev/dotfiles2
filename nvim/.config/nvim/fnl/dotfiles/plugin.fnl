@@ -65,7 +65,7 @@
   :ThePrimeagen/harpoon {:mod :harpoon}
   :nvim-treesitter/nvim-treesitter {:run ":TSUpdate" :mod :treesitter}
   :code-biscuits/nvim-biscuits {:mod :biscuits} ; I think this might need to go after treesitter
-  :neovim/nvim-lspconfig {}
+  :neovim/nvim-lspconfig {:mod :lspconfig}
   :saadparwaiz1/cmp_luasnip {}
   :L3MON4D3/LuaSnip {:mod :luasnip}
   :hrsh7th/cmp-nvim-lsp {}
