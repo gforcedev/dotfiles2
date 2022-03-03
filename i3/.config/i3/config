@@ -79,7 +79,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -210,13 +210,13 @@ exec --no-startup-id picom
 
 exec --no-startup-id ~/.local/bin/i3-layouts
 
-bindsym $mod+u exec ~/.local/bin/i3l hstack 0.7 down
-bindsym $mod+i exec ~/.local/bin/i3l vstack 0.7 right
-bindsym $mod+o exec ~/.local/bin/i3l 2columns left
+bindsym $mod+u exec --no-startup-id ~/.local/bin/i3l hstack 0.7 down
+bindsym $mod+i exec --no-startup-id ~/.local/bin/i3l vstack 0.7 right
+bindsym $mod+o exec --no-startup-id ~/.local/bin/i3l 2columns left
 
 # move focused window overwritten with i3l
-bindsym $mod+Shift+h exec ~/.local/bin/i3l move left
-bindsym $mod+Shift+j exec ~/.local/bin/i3l move down
-bindsym $mod+Shift+k exec ~/.local/bin/i3l move up
-bindsym $mod+Shift+l exec ~/.local/bin/i3l move right
+bindsym $mod+Shift+h exec --no-startup-id ~/.local/bin/i3l move left
+bindsym $mod+Shift+j exec --no-startup-id ~/.local/bin/i3l move down
+bindsym $mod+Shift+k exec --no-startup-id ~/.local/bin/i3l move up
+bindsym $mod+Shift+l exec --no-startup-id ~/.local/bin/i3l move right
 
