@@ -12,6 +12,8 @@
 (set nvim.o.inccommand :split) ; For more interactive :s
 (set nvim.o.hlsearch false)
 (set nvim.o.number true)
+(set nvim.o.signcolumn "number")
+(set nvim.o.cursorline true)
 (set nvim.o.tabstop 4)
 (set nvim.o.shiftwidth 4)
 (set nvim.o.expandtab true)
