@@ -8,16 +8,32 @@
     (lsp.tsserver.setup {})
     (lsp.svelte.setup {})
     (lsp.diagnosticls.setup
-      {:filetypes ["javascript" "javascriptreact" "typescript" "typescriptreact" "css"]
+      {:filetypes ["javascript" "javascriptreact" "typescript" "typescriptreact" "css" "bash" "sh"]
        :init_options {
                       :filetypes {
+                                  :bash "shellcheck"
+                                  :sh "shellcheck"
                                   :javascript "eslint"
                                   :typescript "eslint"
                                   :javascriptreact "eslint"
                                   :typescriptreact "eslint"}
                       :linters {
-                                :eslint {
-                                         :sourceName "eslint"
+                                :shellcheck {:sourceName "shellcheck"
+                                             :command "shellcheck"
+                                             :debounce 100
+                                             :args ["--format" "json1" "-"]
+                                             :parseJson {:errorsRoot "comments"
+                                                         :sourceName "file"
+                                                         :line "line"
+                                                         :endLine "endLine"
+                                                         :endColumn "endColumn"
+                                                         :security "level"
+                                                         :message "[shellcheck] ${message} [SC${code}]"}
+                                             :securities {:error "error"
+                                                          :warning "warning"
+                                                          :info "info"
+                                                          :style "hint"}}
+                                :eslint {:sourceName "eslint"
                                          :command "eslint"
                                          :rootPatterns [".eslintrc.js" "package.json"]
                                          :debounce 100
