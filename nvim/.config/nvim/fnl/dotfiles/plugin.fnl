@@ -59,6 +59,7 @@
   :leafOfTree/vim-svelte-plugin {}
   :rodjek/vim-puppet {}
   :chrisbra/csv.vim {}
+  :LnL7/vim-nix {}
 
   ; Own feature things
   :nvim-telescope/telescope.nvim {:mod :telescope :requires [[:nvim-lua/popup.nvim] [:nvim-lua/plenary.nvim]]}
