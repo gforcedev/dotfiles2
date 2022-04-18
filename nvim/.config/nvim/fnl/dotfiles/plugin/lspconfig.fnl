@@ -7,6 +7,7 @@
     (lsp.clojure_lsp.setup {})
     (lsp.tsserver.setup {})
     (lsp.svelte.setup {})
+    (lsp.perlnavigator.setup {:cmd ["perlnavigator" "--stdio"]})
     (lsp.diagnosticls.setup
       {:filetypes ["javascript" "javascriptreact" "typescript" "typescriptreact" "css" "bash" "sh"]
        :init_options {
@@ -34,26 +35,22 @@
                                                           :info "info"
                                                           :style "hint"}}
                                 :eslint {:sourceName "eslint"
-                                         :command "eslint"
-                                         :rootPatterns [".eslintrc.js" "package.json"]
+                                         :command "node_modules/eslint/bin/eslint.js"
+                                         :rootPatterns [".eslintrc.js" ".eslintrc" "package.json"]
                                          :debounce 100
-                                         :args [
-                                                "--cache"
-                                                "--stdin"
+                                         :args ["--stdin"
                                                 "--stdin-filename"
                                                 "%filepath"
                                                 "--format"
                                                 "json"]
-                                         :parseJson {
-                                                     :errorsRoot "[0].messages"
+                                         :parseJson {:errorsRoot "[0].messages"
                                                      :line "line"
                                                      :column "column"
                                                      :endLine "endline"
                                                      :endColumn "endColumn"
                                                      :message "${message} [${ruleId}]"
                                                      :security "severity"}
-                                         :securities {
-                                                      2 "error"
+                                         :securities {2 "error"
                                                       1 "warning"}}
                                 }
                       }})
