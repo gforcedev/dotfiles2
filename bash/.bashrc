@@ -20,9 +20,6 @@ else
 	export EDITOR='nvim'
 fi
 
-# alias nvim to the appimage              
-alias nvim="~/appimages/nvim.appimage"
-
 alias vim="nvim"
 alias ls="ls --color"
 
