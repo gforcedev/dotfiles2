@@ -48,8 +48,7 @@ bar {
         binding_mode        $base00 $base0A $base00
     }
     position top
-	status_command bumblebee-status -m cpu memory battery time \
-		pasink pasource -p time.format="%H:%M" -t onedark-powerline
+	status_command i3status-rs ~/.config/i3/i3status-rs.toml
 }
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -210,9 +209,9 @@ exec --no-startup-id picom
 
 exec --no-startup-id ~/.local/bin/i3-layouts
 
-bindsym $mod+u exec --no-startup-id ~/.local/bin/i3l hstack 0.7 down
-bindsym $mod+i exec --no-startup-id ~/.local/bin/i3l vstack 0.7 right
-bindsym $mod+o exec --no-startup-id ~/.local/bin/i3l 2columns left
+bindsym $mod+u exec --no-startup-id i3l hstack 0.7 down
+bindsym $mod+i exec --no-startup-id i3l vstack 0.55 right
+bindsym $mod+o exec --no-startup-id i3l 2columns left
 
 # move focused window overwritten with i3l
 bindsym $mod+Shift+h exec --no-startup-id ~/.local/bin/i3l move left
