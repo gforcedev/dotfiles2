@@ -56,5 +56,5 @@
                       }})
     ))
 
-(util.nnoremap :gd "'<Cmd> lua vim.lsp.buf.definition()<CR>'")
-
+(util.nnoremap :gd "lua vim.lsp.buf.definition()")
+(util.nnoremap :K "lua vim.lsp.buf.hover()")
