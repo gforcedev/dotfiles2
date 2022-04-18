@@ -4,7 +4,7 @@
              sidebar sidebar-nvim}})
 
 (sidebar.setup {:open true
-                :sections ["git" "diagnostics" "symbols" "files"]
+                :sections ["git" "diagnostics" "files"]
                 :disable_closing_prompt true})
 
 (util.nnoremap :<C-n> "SidebarNvimToggle")
