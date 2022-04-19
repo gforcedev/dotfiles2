@@ -35,7 +35,6 @@
 
   ; Appearance
   :navarasu/onedark.nvim {:mod :onedark}
-  :miyakogi/seiya.vim {:mod :seiya}
   :hoob3rt/lualine.nvim {:mod :lualine}
 
   ; Git management
