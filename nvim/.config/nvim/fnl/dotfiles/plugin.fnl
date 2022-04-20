@@ -38,7 +38,7 @@
   :hoob3rt/lualine.nvim {:mod :lualine}
 
   ; Git management
-  :airblade/vim-gitgutter {}
+  :lewis6991/gitsigns.nvim {:mod :gitsigns}
   :tpope/vim-fugitive {}
   :tpope/vim-rhubarb {}
   :shumphrey/fugitive-gitlab.vim {:mod :fugitive-gitlab}
