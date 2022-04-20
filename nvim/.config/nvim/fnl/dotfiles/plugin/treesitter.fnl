@@ -12,4 +12,5 @@
                       "fennel"]
    :highlight {:enable true
                :disable {}}
-   :indent {:enable true}})
+   :indent {:enable true}
+   :refactor {:highlight_definitions {:enable true}}})
