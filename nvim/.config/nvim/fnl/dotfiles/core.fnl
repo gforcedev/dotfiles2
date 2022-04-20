@@ -5,7 +5,7 @@
 ; Generic config
 (set nvim.o.title true)
 (set nvim.o.mouse "a")
-(set nvim.o.updatetime 500)
+(set nvim.o.updatetime 200)
 (set nvim.o.timeoutlen 500)
 (set nvim.o.sessionoptions "blank,curdir,folds,help,tabpages,winsize")
 (set nvim.o.scrolloff 4)
