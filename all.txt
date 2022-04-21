@@ -2,6 +2,7 @@ alacritty
 bash
 fontconfig
 i3
+npm
 nvim
 picom
 tmux
