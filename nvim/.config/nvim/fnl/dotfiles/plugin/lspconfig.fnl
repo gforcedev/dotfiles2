@@ -7,6 +7,7 @@
     (lsp.clojure_lsp.setup {})
     (lsp.tsserver.setup {})
     (lsp.svelte.setup {})
+    (lsp.tailwindcss.setup {})
     (lsp.perlnavigator.setup {:cmd ["perlnavigator" "--stdio"]})
     (lsp.diagnosticls.setup
       {:filetypes ["javascript" "javascriptreact" "typescript" "typescriptreact" "css" "bash" "sh"]
