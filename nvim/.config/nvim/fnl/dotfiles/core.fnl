@@ -17,6 +17,7 @@
 (set nvim.o.tabstop 4)
 (set nvim.o.shiftwidth 4)
 (set nvim.o.expandtab true)
+(set nvim.o.laststatus 3)
 (nvim.ex.set "formatoptions+=o")
 
 ; Split after rather than before
