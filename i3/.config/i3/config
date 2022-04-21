@@ -207,7 +207,7 @@ gaps inner 6
 for_window [class=".*"] border pixel 0
 exec --no-startup-id picom
 
-exec --no-startup-id ~/.local/bin/i3-layouts
+exec --no-startup-id i3-layouts
 
 bindsym $mod+u exec --no-startup-id i3l hstack 0.7 down
 bindsym $mod+i exec --no-startup-id i3l vstack 0.55 right
