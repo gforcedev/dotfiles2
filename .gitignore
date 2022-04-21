@@ -1,3 +1,5 @@
 nvim/.config/nvim/lua/
 .xmonad/*
 !.xmonad/xmonad.hs
+misc-nix-bits/result
+tmux/.tmux/plugins
