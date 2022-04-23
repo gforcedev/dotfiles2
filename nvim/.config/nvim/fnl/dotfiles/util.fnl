@@ -16,6 +16,13 @@
 
 (def config-path (nvim.fn.stdpath "config"))
 
+(defn inoremap [from to opts]
+  (let [map-opts {:noremap true}
+        to (.. ":" to "<cr>")]
+    (if (a.get opts :local?)
+      (nvim.buf_set_keymap 0 :i from to map-opts)
+      (nvim.set_keymap :i from to map-opts))))
+
 (defn nnoremap [from to opts]
   (let [map-opts {:noremap true}
         to (.. ":" to "<cr>")]
@@ -25,6 +32,12 @@
 
 (defn lnnoremap [from to]
   (nnoremap (.. "<leader>" from) to))
+
+(defn inoremap-nocmd [from to opts]
+  (let [map-opts {:noremap true}]
+    (if (a.get opts :local?)
+      (nvim.buf_set_keymap 0 :i from to map-opts)
+      (nvim.set_keymap :i from to map-opts))))
 
 (defn nnoremap-nocmd [from to opts]
   (let [map-opts {:noremap true}]

@@ -50,7 +50,7 @@
   :scrooloose/nerdcommenter {:mod :nerdcommenter}
   :christoomey/vim-tmux-navigator {:mod :vim-tmux-navigator}
   :tpope/vim-surround {}
-  :mattn/emmet-vim {}
+  :mattn/emmet-vim {:mod :emmet}
   :thekelvinliu/kwbd {:mod :kwbd}
   :guns/vim-sexp {:mod :sexp}
   :tpope/vim-sexp-mappings-for-regular-people {}
