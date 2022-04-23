@@ -5,6 +5,7 @@
   {:ensure_installed ["json"
                       "javascript"
                       "typescript"
+                      "tsx"
                       "php"
                       "perl"
                       "yaml"
