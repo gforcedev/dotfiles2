@@ -37,7 +37,7 @@
                                                           :style "hint"}}
                                 :eslint {:sourceName "eslint"
                                          :command "node_modules/eslint/bin/eslint.js"
-                                         :rootPatterns [".eslintrc.js" ".eslintrc" "package.json"]
+                                         :rootPatterns [".eslintrc.js" ".eslintrc.json" ".eslintrc" "package.json"]
                                          :debounce 100
                                          :args ["--stdin"
                                                 "--stdin-filename"
@@ -52,11 +52,9 @@
                                                      :message "${message} [${ruleId}]"
                                                      :security "severity"}
                                          :securities {2 "error"
-                                                      1 "warning"}}
-                                }
-                      }})
-    ))
+                                                      1 "warning"}}}}})))
 
 (util.nnoremap :gd "lua vim.lsp.buf.definition()")
 (util.nnoremap :K "lua vim.lsp.buf.hover()")
+(util.lnnoremap :ld "lua vim.diagnostic.open_float()")
 (util.nnoremap "<F2>" "lua vim.lsp.buf.rename()")

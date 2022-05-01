@@ -6,6 +6,4 @@
 (nvim.ex.colorscheme :onedark)
 
 (set nvim.o.termguicolors true)
-(nvim.ex.hi "Normal ctermbg=none guibg=none")
-(nvim.ex.hi "NonText ctermbg=none guibg=none")
 
