@@ -62,8 +62,9 @@
   :LnL7/vim-nix {}
 
   ; Own feature things
-  :nvim-telescope/telescope.nvim {:mod :telescope :requires [[:nvim-lua/popup.nvim] [:nvim-lua/plenary.nvim]]}
   :ThePrimeagen/harpoon {:mod :harpoon}
+  :asbjornhaland/telescope-send-to-harpoon.nvim {}
+  :nvim-telescope/telescope.nvim {:mod :telescope :requires [[:nvim-lua/popup.nvim] [:nvim-lua/plenary.nvim]]}
   :nvim-treesitter/nvim-treesitter {:run ":TSUpdate" :mod :treesitter}
   :nvim-treesitter/nvim-treesitter-refactor {}
   :code-biscuits/nvim-biscuits {:mod :biscuits} ; I think this might need to go after treesitter

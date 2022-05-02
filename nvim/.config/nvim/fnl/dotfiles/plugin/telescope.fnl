@@ -20,7 +20,8 @@
                              :<C-k> actions.move_selection_previous
                              :<C-s> actions.select_vertical
                              :<C-i> actions.select_horizontal
-                             :<esc> actions.close}
+                             :<esc> actions.close
+                             :<C-h> telescope.extensions.send_to_harpoon.actions.send_selected_to_harpoon}
                              ; :h "<CR>:lua require(\"harpoon.mark\").add_file()<CR>:Telescope resume<CR>"}
                          }
               :extensions {:fzy_native {:override_generic_sorter true
