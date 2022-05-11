@@ -5,6 +5,11 @@
 (let [lsp (require :lspconfig)]
   (when lsp
     (lsp.clojure_lsp.setup {})
+    (lsp.gopls.setup
+      {:settings {:gopls {:analyses {:nilness true
+                                     :unusedwrite true}
+                          :gofumpt true}}})
+    (lsp.golangci_lint_ls.setup {})
     (lsp.tsserver.setup {})
     (lsp.svelte.setup {})
     (lsp.tailwindcss.setup {})

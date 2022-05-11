@@ -2,7 +2,9 @@
   {autoload {treesitter nvim-treesitter.configs}})
 
 (treesitter.setup
-  {:ensure_installed ["json"
+  {:ensure_installed ["go"
+                      "gomod"
+                      "json"
                       "javascript"
                       "typescript"
                       "tsx"
