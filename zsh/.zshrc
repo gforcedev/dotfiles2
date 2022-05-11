@@ -36,8 +36,6 @@ export GIT_EDITOR=nvim
 alias vim="nvim"
 alias ls="ls --color"
 
-export NVM_LAZY_LOAD=true
-
 # Check if zplug is installed
 if [[ ! -d ~/.zplug ]]; then
   git clone https://github.com/zplug/zplug ~/.zplug
@@ -48,6 +46,8 @@ fi
 source ~/.zplug/init.zsh
 
 # Make sure to use double quotes to prevent shell expansion
+export NVM_LAZY_LOAD=true
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim')
 zplug "lukechilds/zsh-nvm"
 
 # Add a bunch more of your favorite packages!
