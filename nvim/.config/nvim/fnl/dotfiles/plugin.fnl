@@ -64,6 +64,7 @@
   ; Own feature things
   :ThePrimeagen/harpoon {:mod :harpoon}
   :asbjornhaland/telescope-send-to-harpoon.nvim {}
+  :nvim-telescope/telescope-ui-select.nvim {}
   :nvim-telescope/telescope.nvim {:mod :telescope :requires [[:nvim-lua/popup.nvim] [:nvim-lua/plenary.nvim]]}
   :nvim-treesitter/nvim-treesitter {:run ":TSUpdate" :mod :treesitter}
   :nvim-treesitter/nvim-treesitter-refactor {}
