@@ -62,4 +62,5 @@
 (util.nnoremap :gd "lua vim.lsp.buf.definition()")
 (util.nnoremap :K "lua vim.lsp.buf.hover()")
 (util.lnnoremap :ld "lua vim.diagnostic.open_float()")
+(util.lnnoremap :la "lua vim.lsp.buf.code_action()")
 (util.nnoremap "<F2>" "lua vim.lsp.buf.rename()")

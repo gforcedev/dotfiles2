@@ -25,7 +25,9 @@
                              ; :h "<CR>:lua require(\"harpoon.mark\").add_file()<CR>:Telescope resume<CR>"}
                          }
               :extensions {:fzy_native {:override_generic_sorter true
-                                        :override_file_sorter true}}}})
+                                        :override_file_sorter true}
+                           :ui-select {}}}})
+(telescope.load_extension "ui-select")
 
 (util.nnoremap :<C-p> "Telescope find_files")
 (util.lnnoremap :fb "Telescope file_browser")
@@ -42,7 +44,6 @@
 (util.lnnoremap :fC "Telescope command_history")
 (util.lnnoremap :fq "Telescope quickfix")
 (util.lnnoremap :fl "Telescope loclist")
-(util.lnnoremap :la "Telescope lsp_code_actions")
 (util.lnnoremap :li "Telescope lsp_implementations")
 (util.lnnoremap :lr "Telescope lsp_references")
 (util.lnnoremap :lS "Telescope lsp_document_symbols")
