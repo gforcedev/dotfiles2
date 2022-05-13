@@ -1,4 +1,5 @@
 nvim/.config/nvim/lua/
+nvim/.config/configstore/
 .xmonad/*
 !.xmonad/xmonad.hs
 misc-nix-bits/result
