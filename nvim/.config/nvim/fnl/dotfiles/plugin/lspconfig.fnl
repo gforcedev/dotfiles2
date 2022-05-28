@@ -12,6 +12,7 @@
     (lsp.golangci_lint_ls.setup {:init_options {:command ["golangci-lint" "run" "--enable-all" "--disable" "lll" "--out-format" "json"]}})
     (lsp.tsserver.setup {})
     (lsp.svelte.setup {})
+    (lsp.prismals.setup {})
     (lsp.tailwindcss.setup {})
     (lsp.perlnavigator.setup {:cmd ["perlnavigator" "--stdio"]})
     (lsp.diagnosticls.setup
@@ -65,4 +66,4 @@
 (util.lnnoremap :la "lua vim.lsp.buf.code_action()")
 (util.nnoremap "<F2>" "lua vim.lsp.buf.rename()")
 
-(nvim.ex.autocmd "BufWritePre *.go lua vim.lsp.buf.formatting()")
+(nvim.ex.autocmd "BufWritePre *.go,*.prisma lua vim.lsp.buf.formatting()")
