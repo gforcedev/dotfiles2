@@ -37,7 +37,8 @@
    :nvim_lsp "lsp"
    :path "path"
    :nvim_lua "lua"
-   :luasnip "luasnip"})
+   :luasnip "luasnip"
+   :nvim_lsp_signature_help "sig"})
 
 (def- cmp-srcs
   [{:name :nvim_lsp}
@@ -45,7 +46,8 @@
    {:name :nvim_lua}
    {:name :path}
    {:name :luasnip}
-   {:name :buffer}])
+   {:name :buffer}
+   {:name :nvim_lsp_signature_help}])
 
 (cmp.setup {:formatting
             {:format (fn [entry item]

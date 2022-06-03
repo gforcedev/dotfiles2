@@ -66,4 +66,8 @@
 (util.lnnoremap :la "lua vim.lsp.buf.code_action()")
 (util.nnoremap "<F2>" "lua vim.lsp.buf.rename()")
 
+; Some langs I'm currently using lsp format on save rather than neoformat
 (nvim.ex.autocmd "BufWritePre *.go,*.prisma lua vim.lsp.buf.formatting()")
+
+; I don't have a better place to put these rn and not having them is annoying
+(nvim.ex.autocmd "BufReadPre,FileReadPre *.js,*.ts,*.jsx,*.tsx,*.json set tabstop=2 shiftwidth=2 expandtab")

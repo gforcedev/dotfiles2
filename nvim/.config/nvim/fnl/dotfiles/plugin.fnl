@@ -77,6 +77,7 @@
   :hrsh7th/cmp-path {}
   :hrsh7th/cmp-cmdline {}
   :PaterJason/cmp-conjure {}
+  :hrsh7th/cmp-nvim-lsp-signature-help {}
   :hrsh7th/nvim-cmp {:mod :cmp}
   :sbdchd/neoformat {:mod :neoformat}
   :sidebar-nvim/sidebar.nvim {:mod :sidebar})
