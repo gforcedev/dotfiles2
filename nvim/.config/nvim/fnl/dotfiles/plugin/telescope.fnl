@@ -29,7 +29,7 @@
                            :ui-select {}}}})
 (telescope.load_extension "ui-select")
 
-(util.nnoremap :<C-p> "Telescope find_files")
+(util.nnoremap :<C-p> "Telescope git_files")
 (util.lnnoremap :fb "Telescope file_browser")
 (util.lnnoremap :fg "Telescope live_grep")
 (util.lnnoremap ";" "Telescope buffers")

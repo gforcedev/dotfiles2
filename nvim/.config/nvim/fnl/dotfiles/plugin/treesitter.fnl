@@ -9,7 +9,6 @@
                       "typescript"
                       "tsx"
                       "php"
-                      "perl"
                       "prisma"
                       "yaml"
                       "clojure"
