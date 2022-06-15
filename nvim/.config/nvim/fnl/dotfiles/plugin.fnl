@@ -36,6 +36,7 @@
   ; Appearance
   :navarasu/onedark.nvim {:mod :onedark}
   :hoob3rt/lualine.nvim {:mod :lualine}
+  :akinsho/bufferline.nvim {:requires [:kyazdani42/nvim-web-devicons] :mod :bufferline}
 
   ; Git management
   :lewis6991/gitsigns.nvim {:mod :gitsigns}
