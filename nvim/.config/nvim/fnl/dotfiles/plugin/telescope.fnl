@@ -33,7 +33,6 @@
 (util.lnnoremap :fb "Telescope file_browser")
 (util.lnnoremap :fg "Telescope live_grep")
 (util.lnnoremap ";" "Telescope buffers")
-(util.lnnoremap :fv "Telescope git_status")
 (util.lnnoremap :* "Telescope grep_string")
 (util.lnnoremap :fH "Telescope help_tags")
 (util.lnnoremap :fk "Telescope keymaps")

@@ -43,6 +43,7 @@
   :tpope/vim-fugitive {}
   :tpope/vim-rhubarb {}
   :shumphrey/fugitive-gitlab.vim {:mod :fugitive-gitlab}
+  :kdheepak/lazygit.nvim {:mod :lazygit}
 
   ; Editor behaviour
   :jiangmiao/auto-pairs {:mod :auto-pairs}
